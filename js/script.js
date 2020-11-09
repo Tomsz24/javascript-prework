@@ -10,11 +10,8 @@ const playGame = (playerInput) => {
     }
   }
   const randomNumber = Math.floor(Math.random() * 3 + 1);
-  // const playerInput = prompt(`Wybierz swój ruch! 1: Kamień, 2: Papier, 3: Nożyce.`);
-
   let computerMove = getMoveName(randomNumber);
   let playerMove = getMoveName(playerInput);
-
 
   const displayResult = (argCPU, argPlayer) => {
     printMessage(`Komputer zagrał ${argCPU}, a Ty zagrałeś ${argPlayer}`);
