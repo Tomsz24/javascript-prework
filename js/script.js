@@ -20,16 +20,12 @@ const playGame = (playerInput) => {
       printMessage(`Mamy remis`);
     } else if (argCPU == `Kamień` && argPlayer == `Papier`) {
       printMessage(`Brawo!!! Ty wygrywasz !!! :D`);
-    } else if (argCPU == `Kamień` && argPlayer == `Nożyce`) {
-      printMessage(`No niestety przegrałeś :(`);
-    } else if (argCPU == `Papier` && argPlayer == `Kamień`) {
-      printMessage(`No niestety przegrałeś :(`);
     } else if (argCPU == `Papier` && argPlayer == `Nożyce`) {
       printMessage(`Brawo!!! Ty wygrywasz !!! :D`);
     } else if (argCPU == `Nożyce` && argPlayer == `Kamień`) {
       printMessage(`Brawo!!! Ty wygrywasz !!! :D`);
-    } else if (argCPU == `Nożyce` && argPlayer == `Papier`) {
-      printMessage(`No niestety przegrałeś :(`);
+    } else {
+      printMessage(`Niestety przegrywasz :(`);
     }
   };
   displayResult(computerMove, playerMove);
